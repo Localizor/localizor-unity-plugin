@@ -35,7 +35,7 @@ namespace Localizor.Editor
             if (settings == null)
             {
                 settings = CreateInstance<LocalizorSettings>();
-                AssetDatabase.CreateAsset(settings, "Assets/Resources/LocalizorSettings.asset");
+                AssetDatabase.CreateAsset(settings, "Assets/Localizor/Resources/LocalizorSettings.asset");
                 AssetDatabase.SaveAssets();
             }
         }

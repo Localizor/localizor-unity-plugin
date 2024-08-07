@@ -37,7 +37,7 @@ namespace Localizor
             {
 #if UNITY_EDITOR
                 _settings = ScriptableObject.CreateInstance<LocalizorSettings>();
-                var path = Path.Combine("Assets", "Resources", "LocalizorSettings.asset");
+                var path = Path.Combine("Assets", "Localizor", "Resources", "LocalizorSettings.asset");
                 var assetPathAndName = AssetDatabase.GenerateUniqueAssetPath(path);
                 AssetDatabase.CreateAsset(_settings, assetPathAndName);
                 AssetDatabase.SaveAssets();
