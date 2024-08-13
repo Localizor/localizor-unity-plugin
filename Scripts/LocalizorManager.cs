@@ -317,9 +317,15 @@ namespace Localizor
 
             var jsonResponse = JSON.Parse(request.downloadHandler.text);
             var translations = jsonResponse["data"]["translations"];
+            var structuredTranslations = new JSONObject();
+
+            foreach (var translation in translations)
+            {
+                structuredTranslations.Add(translation.Key, translation.Value);
+            }
 
             var filePath = Path.Combine(path, $"{languageCode.ToLower()}.json");
-            File.WriteAllText(filePath, translations.ToString(4));
+            File.WriteAllText(filePath, structuredTranslations.ToString(4));
 
             Debug.Log($"Localization for {languageName} was updated");
             locale.Add(languageCode.ToLower(), languageName);
