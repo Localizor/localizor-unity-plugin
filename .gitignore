@@ -73,3 +73,7 @@ crashlytics-build.properties
 
 # DS_Store files
 *.DS_Store
+
+# Localizor settings
+/[Rr]esources/LocalizorSettings.asset
+/[Rr]esources/LocalizorSettings.asset.meta
