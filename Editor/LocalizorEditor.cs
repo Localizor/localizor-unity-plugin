@@ -19,12 +19,12 @@ namespace Localizor.Editor
 
         private string localizationKeyToFind;
 
-        [MenuItem("Localizor/Open Editor")]
+        [MenuItem("Window/Localizor/Open Settings")]
         public static void Init()
         {
             if (Window)
                 Window.Close();
-            Window = (LocalizorEditor)GetWindow(typeof(LocalizorEditor), true, "Localizor Stringtable Updater", true);
+            Window = (LocalizorEditor)GetWindow(typeof(LocalizorEditor), true, "Localizor Settings", true);
             Window.Show();
         }
 
@@ -140,7 +140,7 @@ namespace Localizor.Editor
                 LocalizorManager.LoadLocalizationTables();
         }
 
-        [MenuItem("Localizor/Update Stringtables")]
+        [MenuItem("Window/Localizor/Update Stringtables")]
         private static void UpdateLocalizorLocale()
         {
             EditorCoroutineUtility.StartCoroutineOwnerless(
