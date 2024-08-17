@@ -17,9 +17,9 @@
   ],
   "samples": [
     {
-      "displayName": "Localizor Sample Scene",
+      "displayName": "Sample Scene",
       "description": "Just a simple scene to demonstrate fetching translations from Localizor.",
-      "path": "Scenes/LocalizorSampleScene"
+      "path": "Samples~/SampleScene"
     }
   ],
   "author": {
