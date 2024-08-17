@@ -1,7 +1,7 @@
 {
   "name": "com.localizor.unity",
   "version": "0.9.0",
-  "displayName": "Localizor Unity Plugin",
+  "displayName": "Localizor",
   "description": "Localizor – Community translation software built for game devs.",
   "unity": "2021.3",
   "dependencies": {
@@ -17,9 +17,9 @@
   ],
   "samples": [
     {
-      "displayName": "Sample Scene",
-      "description": "Sample Scene",
-      "path": "Scenes/SampleScene"
+      "displayName": "Localizor Sample Scene",
+      "description": "Just a simple scene to demonstrate fetching translations from Localizor.",
+      "path": "Scenes/LocalizorSampleScene"
     }
   ],
   "author": {
